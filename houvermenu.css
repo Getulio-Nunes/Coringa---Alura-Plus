@@ -1,0 +1,62 @@
+:root{
+  
+  --fonte-menu:'Bangers';
+
+}
+
+.menu_lista{
+  list-style-type: none;
+  }
+
+
+.btn {
+    
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    color: #e74c3c;
+    cursor: pointer;
+    font-size: 1.7rem;
+    margin:  1px 0 3px 0;
+    padding: 0.9em 2em;
+    text-transform: uppercase;
+    font-family: var(--fonte-menu);
+    font-weight: 300;
+        
+  }
+  .btn:hover, .btn:focus {
+    color: #fff;
+    outline: 0;
+  }
+  
+  .fifth {
+    border-color: #914dad;
+    border-radius: 0 0 50px 50px;
+    color: #914dad;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+    
+  }
+  .fifth:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: #914dad;
+    z-index: -1;
+    -webkit-transition: width 150ms ease-in-out;
+    transition: width 150ms ease-in-out;
+  }
+  .fifth:hover {
+    color: #fff;
+  }
+  .fifth:hover:after {
+    width: 110%;
+  }
