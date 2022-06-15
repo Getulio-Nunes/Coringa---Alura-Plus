@@ -25,6 +25,7 @@ body{
 }
 
 .principal{
+    width: 1380px;
     background-position: right;
     background-image: url(img/Background.png);
     background-repeat: no-repeat;
